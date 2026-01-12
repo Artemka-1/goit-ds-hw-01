@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "personal-assistant"
+version = "0.1.0"
+description = "CLI Personal Assistant"
+authors = ["Your Name <your@email.com>"]
+packages = [{ include = "personal_assistant" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+assistant = "personal_assistant.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
